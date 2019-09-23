@@ -43,7 +43,7 @@ for m = 1:1:it
         TM = imresize(TT, [T,T]);
         hold on;
         figure(1);
-        imshow((TM(1:T-1,1:T-1))/max(max(TM)),'InitialMagnification','fit','colormap',colormap(summer));
+        imshow((TM(1:T-1,1:T-1))/max(max(TM)),'colormap',colormap(summer));
         drawnow;
         hold off;
 
